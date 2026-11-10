@@ -1,0 +1,23 @@
+[project]
+name = "genysis_pos"
+authors = [{ name = "Genysis", email = "dev@example.com" }]
+description = "SaaS POS backend for Frappe/ERPNext with KRA e-TIMS integration"
+requires-python = ">=3.10"
+readme = "README.md"
+dynamic = ["version"]
+dependencies = [
+    # "frappe~=15.0.0"  # Installed and managed by bench
+    "requests>=2.31",
+]
+
+[build-system]
+requires = ["flit_core >=3.4,<4"]
+build-backend = "flit_core.buildapi"
+
+[tool.bench.frappe-dependencies]
+frappe = ">=15.0.0,<16.0.0"
+erpnext = ">=15.0.0,<16.0.0"
+
+[tool.ruff]
+line-length = 110
+target-version = "py310"

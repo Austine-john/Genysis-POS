@@ -1,0 +1,14 @@
+.pos-home {
+  max-width: 720px;
+  margin: 0 auto;
+  padding: 2rem 1rem;
+  text-align: left;
+}
+
+.status ul {
+  padding-left: 1.25rem;
+}
+
+.error {
+  color: #c62828;
+}

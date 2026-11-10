@@ -1,0 +1,39 @@
+{
+ "actions": [],
+ "creation": "2026-11-10 00:00:00.000000",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "enabled",
+  "environment",
+  "base_url",
+  "column_break_1",
+  "tin",
+  "branch_id",
+  "device_serial",
+  "cmc_key"
+ ],
+ "fields": [
+  {"default": "0", "fieldname": "enabled", "fieldtype": "Check", "label": "Enabled"},
+  {"default": "Sandbox", "fieldname": "environment", "fieldtype": "Select", "label": "Environment", "options": "Sandbox\nProduction"},
+  {"fieldname": "base_url", "fieldtype": "Data", "label": "Base URL"},
+  {"fieldname": "column_break_1", "fieldtype": "Column Break"},
+  {"fieldname": "tin", "fieldtype": "Data", "label": "KRA PIN (TIN)"},
+  {"fieldname": "branch_id", "fieldtype": "Data", "label": "Branch ID", "default": "00"},
+  {"fieldname": "device_serial", "fieldtype": "Data", "label": "Device Serial Number"},
+  {"fieldname": "cmc_key", "fieldtype": "Password", "label": "CMC Key", "read_only": 1}
+ ],
+ "issingle": 1,
+ "links": [],
+ "modified": "2026-11-10 00:00:00.000000",
+ "modified_by": "Administrator",
+ "module": "ETIMS",
+ "name": "eTIMS Settings",
+ "owner": "Administrator",
+ "permissions": [
+  {"create": 1, "delete": 1, "email": 1, "print": 1, "read": 1, "role": "System Manager", "share": 1, "write": 1}
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}
